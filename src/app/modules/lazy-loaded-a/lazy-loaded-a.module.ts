@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { componentPath } from '../../shared/helpers';
 import { LazyLoadedAListComponent } from './lazy-loaded-a-list/lazy-loaded-a-list.component';
 
 const routes: Routes = [
-  { path: 'list', component: LazyLoadedAListComponent },
+  { ...componentPath('list', LazyLoadedAListComponent) },
 ];
 
 @NgModule({
