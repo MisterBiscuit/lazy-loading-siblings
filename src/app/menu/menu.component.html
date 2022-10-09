@@ -1,0 +1,7 @@
+<p>Main Menu</p>
+
+<div>
+  <span class="menu-link" *ngFor="let link of links">
+    <a [routerLink]="link.path">{{ link.label }}</a>
+  </span>
+</div>
